@@ -1,0 +1,65 @@
+/* Button.module.css */
+.button {
+  padding: 8px 16px;  /* Mengurangi padding untuk tombol lebih kecil */
+  border-radius: 30px;  /* Mengurangi border-radius untuk tampilan lebih kecil */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.875rem; /* Mengurangi ukuran font */
+  text-transform: uppercase;
+  letter-spacing: 0.8px; /* Mengurangi jarak antar huruf */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.button-primary {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih kecil */
+}
+
+.button-primary:hover {
+  background-color: #333333;
+  transform: translateY(-1px); /* Efek hover lebih halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.button-secondary {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih kecil */
+}
+
+.button-secondary:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px); /* Efek hover lebih halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.button-danger {
+  background-color: #ff5656;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih kecil */
+}
+
+.button-danger:hover {
+  background-color: #e04e4e;
+  transform: translateY(-1px); /* Efek hover lebih halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.button-success {
+  background-color: #4ab14a;
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Bayangan lebih kecil */
+}
+
+.button-success:hover {
+  background-color: #45a045;
+  transform: translateY(-1px); /* Efek hover lebih halus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
