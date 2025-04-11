@@ -20,18 +20,11 @@ const Login = () => {
 
   return (
     <main className={styles.login}>
-      {/* Information about the app outside the card */}
-      <div className={styles.infoContainer}>
-        <h1 className={styles.title}>Welcome to ALF Cafe</h1>
-        <p className={styles.subtitle}>Your go-to restaurant app for easy ordering and management!</p>
-      </div>
-
       <div className={styles.card}>
-        <h2 className={styles.cardTitle}>Login</h2>
-
+        <h1 className={styles.title}>Login</h1>
         <form className={styles.form} onSubmit={handleLogin}>
-        <Input
-            label=" "
+          <Input
+            label="Email"
             name="email"
             id="email"
             type="email"
@@ -39,21 +32,16 @@ const Login = () => {
             required
           />
           <Input
-            label=" "
+            label="Password"
             name="password"
             id="password"
             type="password"
             placeholder="Insert Password"
             required
           />
-          <Button type="submit" className={styles.loginButton}>Login</Button>
+          <Button type="submit">Login</Button>
         </form>
       </div>
-
-      {/* Additional information outside the card */}
-      <p className={styles.infoText}>
-        Manage orders, track customers, and keep your restaurant running smoothly — all in one place.
-      </p>
     </main>
   );
 };

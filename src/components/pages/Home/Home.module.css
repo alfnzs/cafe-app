@@ -1,8 +1,49 @@
+/* Home.module.css */
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 8px;
+  gap: 20px; /* Increased space between title and button */
+  background-color: #f5f5f5; /* Light background for a soft look */
+  background-image: url('https://wallpaperaccess.com/full/1204999.jpg'); /* Optional background image */
+  background-size: cover; /* Make background image cover the full viewport */
+  background-position: center; /* Center the background image */
+  text-align: center; /* Center all content */
+  padding-bottom: 90px;
+}
+
+.title {
+  font-size: 3rem;
+  color: rgb(65, 65, 65); /* White color for the title to stand out against background */
+  font-weight: bold;
+  text-align: center; /* Center-align the text */
+  margin-bottom: 10px; /* Space between the title and button */
+  text-transform: uppercase; /* Give it a bold uppercased feel */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding shadow for contrast */
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #1c1c1c; /* Light color for description text */
+  margin-bottom: 20px;
+  font-weight: 400;
+  max-width: 500px; /* Limit description width for readability */
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Slightly smaller title on smaller screens */
+  }
+
+  .description {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+    padding: 0 10px;
+  }
+
+  .loginButton {
+    padding: 10px 70px; /* Adjust button padding on smaller screens */
+    font-size: 1rem; /* Make the text smaller on mobile */
+  }
 }
